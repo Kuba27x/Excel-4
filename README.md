@@ -33,6 +33,7 @@ In this example, we will check whether the entered value is between 1 and 10.
    - In the Allow list, click **Whole number**.
    - In the Data list, click **between**.
    - Enter Maximum and Minimum values.
+
 ![Validation](Screenshots/Validation.png)
 
 **Input Message window:**  
