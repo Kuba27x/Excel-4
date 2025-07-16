@@ -1,64 +1,122 @@
-Excel#4
+# 📊 Excel-4
 
-Project Description
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-blue.svg)
 
-Excel-4 shows practical examples of data validation in Excel. Here you'll find tips, instructions, and illustrations about validating data and creating drop down tables.
+## ✨ Project Description
 
-Table of Contents 
+**Excel-4** shows practical examples of data validation in Excel. Here you'll find tips, instructions, and illustrations about validating data and creating drop-down tables.
 
-Data validation
+> 📚 **Goal:** Help you validate and control data input in Excel efficiently—suitable for both beginners and advanced users!
 
-In this example we will be checking whether entered value is between 1 and 10.
-To create the data validation rule, execute the following steps:
-1. Select cell B1.
-2. On the Data tab, in the Data Tools group, click Data Validation.
-On the Settings tab:
-3. In the Allow list, click Whole number, In the Data list click between.
-4. Enter Maximum and Minimum values.
-![screenshot](Screenshots/Validation.png)
-Input Message window:
-![screenshot](Screenshots/Input.png)
-Error Alert window:
-![screenshot](Screenshots/Error.png)
+---
 
-Results:
-When user selects cell B1:
-![screenshot](Screenshots/Result.png)
-When user enters number from range 1-10 everything is fine:
-![screenshot](Screenshots/Result1.png)
-When user enters number out of range:
-![screenshot](Screenshots/Result2.png)
+## 📒 Table of Contents
 
-(Note: to remove data validation from a cell, select the cell, on the Data tab, in the Data Tools group, click Data Validation, and then click Clear All)
+- [Data Validation](#-data-validation)
+- [Budget Limit Example](#-budget-limit-example)
+- [Prevent Duplicates Example](#-prevent-duplicates-example)
+- [Drop-down Lists](#-drop-down-lists)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Author](#-author)
 
-Budget limit example
+---
 
-To avoid exceeding a budget limit in Excel use data validation and the SUM function.
+## ✅ Data Validation
 
-1. Select range E2:E6 and click Data Validation.
-2. In the Allow list, click Custom.
-3. In the formula box enter: =SUM($E$2:$E$6)<=80
-![screenshot](Screenshots/Validation1.png)
-Result when user exceeds budget:
-![screenshot](Screenshots/Result3.png)
+In this example, we will check whether the entered value is between 1 and 10.
 
-Prevent duplicates example
+1. Select cell **B1**.
+2. On the **Data** tab, in the **Data Tools** group, click **Data Validation**.
+3. On the Settings tab:
+   - In the Allow list, click **Whole number**.
+   - In the Data list, click **between**.
+   - Enter Maximum and Minimum values.
+4. ![Validation](Screenshots/Validation.png)
 
-1. Select range G2:G15 and click Data Validation
-2. In the Allow list, click Custom.
-3. In the formula box enter: =COUNTIF($G$2:$G$15;G2)=1
-![screenshot](Screenshots/Validation2.png)
-(Note: we count the number of values in range G2:G15 that are equal to value in cell G2. This value may occur only once. Because we selected range G2:G15 before we selected Data Validation, Excel automatically copies the formula to the other cells. Absolute reference $G$2:$G$15 stays locked.)
-Result:
-![screenshot](Screenshots/Result4.png)
+**Input Message window:**  
+![Input](Screenshots/Input.png)
 
-Drop-down lists
+**Error Alert window:**  
+![Error](Screenshots/Error.png)
 
-1. On the first sheet type food names:
-![screenshot](Screenshots/List.png)
-2. On the second sheet select cell B1 then click Data Validation.
-3. In the Allow box, click List.
-4. Click in the Source box and select the range I1:I4 on the first sheet.
-![screenshot](Screenshots/List1.png)
-5. Click OK
-![screenshot](Screenshots/List2.png)
+**Results:**
+
+- When user selects cell B1:  
+  ![Result](Screenshots/Result.png)
+- When user enters number from range 1–10, everything is fine:  
+  ![Result1](Screenshots/Result1.png)
+- When user enters number out of range:  
+  ![Result2](Screenshots/Result2.png)
+
+> 📝 **Tip:** To remove data validation from a cell, select the cell, go to Data tab → Data Validation, and click **Clear All**.
+
+---
+
+## 💰 Budget Limit Example
+
+To avoid exceeding a budget limit in Excel, use data validation and the SUM function.
+
+1. Select range **E2:E6** and click **Data Validation**.
+2. In the Allow list, click **Custom**.
+3. In the formula box enter:  
+   ```excel
+   =SUM($E$2:$E$6)<=80
+   ```
+   ![Validation1](Screenshots/Validation1.png)
+
+**Result when user exceeds budget:**  
+![Result3](Screenshots/Result3.png)
+
+---
+
+## 🚫 Prevent Duplicates Example
+
+1. Select range **G2:G15** and click **Data Validation**.
+2. In the Allow list, click **Custom**.
+3. In the formula box enter:  
+   ```excel
+   =COUNTIF($G$2:$G$15;G2)=1
+   ```
+   ![Validation2](Screenshots/Validation2.png)
+
+> ℹ️ **Note:** This formula ensures each value may occur only once in the selected range.
+
+**Result:**  
+![Result4](Screenshots/Result4.png)
+
+---
+
+## 📋 Drop-down Lists
+
+1. On the first sheet, type food names:  
+   ![List](Screenshots/List.png)
+2. On the second sheet, select cell **B1**, then click **Data Validation**.
+3. In the Allow box, click **List**.
+4. Click in the Source box and select the range **I1:I4** on the first sheet.  
+   ![List1](Screenshots/List1.png)
+5. Click OK  
+   ![List2](Screenshots/List2.png)
+
+---
+
+## 📷 Screenshots
+
+You can find all screenshots in the `/Screenshots` folder.
+
+---
+
+## ℹ️ Requirements
+
+- Microsoft Excel (recommended: 2021/365 for modern formulas)
+- Windows OS
+
+---
+
+## 👨‍💻 Author
+
+Project and documentation by **Kuba27x**  
+Repository: [Kuba27x/Excel-4](https://github.com/Kuba27x/Excel-4)
+
+---
